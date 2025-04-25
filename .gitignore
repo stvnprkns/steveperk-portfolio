@@ -1,0 +1,18 @@
+# Node & build
+node_modules/
+dist/
+build/
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Netlify
+.netlify/
+
+# Env
+.env*
