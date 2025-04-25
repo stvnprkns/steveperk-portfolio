@@ -119,6 +119,47 @@
       color: #fff;
     }
   </style>
+  <style>
+    .responsive-hero-header {
+      font-family: 'Petrona', serif;
+      font-weight: 300;
+      opacity: 1;
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      transform: none;
+      word-break: break-word;
+      overflow-wrap: break-word;
+      line-height: 1.25;
+      font-size: clamp(2.2rem, 6vw, 3.5rem);
+      margin: 0 0 24px 0;
+    }
+    .responsive-hero-header .text-span,
+    .responsive-hero-header .btn-label {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 600;
+      font-size: 2.7rem;
+      line-height: inherit;
+      display: inline;
+    }
+    @media (max-width: 991px) {
+      .responsive-hero-header {
+        font-size: clamp(1.7rem, 5vw, 2.5rem);
+        line-height: 1.25;
+      }
+    }
+    @media (max-width: 767px) {
+      .responsive-hero-header {
+        font-size: clamp(1.25rem, 7vw, 2.1rem);
+        line-height: 1.3;
+        padding: 0 5vw;
+      }
+      .responsive-hero-header .text-span,
+      .responsive-hero-header .btn-label {
+        font-size: 1.08rem;
+      }
+    }
+  </style>
 </head>
 <body class="body-7">
   <!-- Webflow Navigation Start -->
@@ -146,7 +187,7 @@
   <main>
     <section class="section-11">
       <div class="div-block-20">
-        <h1 style="font-family: 'Petrona', serif; font-weight: 300; opacity:1;-webkit-transform:translate3d(0px, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0px, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0px, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0px, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="hero-header">
+        <h1 class="hero-header responsive-hero-header">
           <span class="data-state-1">Steve Perkins is a multi-disciplinary </span>
           <span data-w-id="4f343a1f-41de-bafa-c5bd-1ebc4483a379" class="text-span cl interactive-btn" data-keyword="creative leader"><span class="btn-label">creative leader</span></span>
           <span class="data-state-extra cl-extra" style="display:none">, startup advisor, and founder, </span>
